@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background: linear-gradient(
+    168.13deg,
+    #f8d696 4.91%,
+    #ea8af2 43.43%,
+    #a972ee 98.14%
+  );
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .triangle {
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  }
+}
